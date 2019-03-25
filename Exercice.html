@@ -1,0 +1,103 @@
+<html lang="fr">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <title>Exercice 8</title>
+</head>
+
+<body>
+  <form action="form.php" method="post">
+    <fieldset class="personnalInfos">
+      <legend id="personalInfos">Vos informations personnelles</legend>
+      <label for="Civility" id="Civility">Choisissez une option : </label>
+      <select name="Civility" required>
+        <option value="Choose" disabled selected>Choisissez votre civilité</option>
+        <option value="Mister">Monsieur</option>
+        <option value="Miss">Madame</option>
+      </select>
+      <label for="lastName">Nom : </label><input type="text" name="lastName" id="lastName" placeholder="Votre Nom de famille" required />
+      <label for="firstName">Prénom : </label><input type="text" name="firstName" id="firstName" placeholder="Votre prénom" required />
+      <label for="Birthday">Date de naissance : </label><input type="date" name="Birthday" id="Birthday" placeholder="Date de naissance" required />
+      <div class="contact">
+        <label for="phoneNumber" id="phoneNumber">Numéro de téléphone : </label>
+        <input type="tel" name="cellPhone" id="cellPhone" placeholder="Portable" />
+        <input type="tel" name="Home" id="Home" placeholder="Fixe" />
+      </div>
+      <div class="Adress">
+        <label for="Adress" id="Adress">Adresse postale : </label>
+        <input type="text" name="Number" id="Number" placeholder="voie" />
+        <input type="text" name="Street" id="Street" placeholder="Rue" required />
+      </div>
+      <label for="Postal" id="Postal">Code Postal : </label><input type="text" name="Postal" placeholder="Code Postal" required />
+      <label for="Town">Ville : </label><input type="text" name="Town" id="Town" placeholder="Ville" required />
+      <label for="Login">Login : </label><input type="text" name="Login" id="Login" placeholder="Login" required />
+      <label for="Password">Mot de passe : </label><input type="password" name="Password" id="Password" placeholder="Mot de passe" required /><label for="Confirm">Confirmez : </label><input type="Password" name="Password" id="Password"
+        placeholder="Confirmez" required />
+    </fieldset>
+    <fieldset class="capacity">
+      <legend id="capacity">Compétences personnelles</legend>
+      <div class="Level">
+        <label for="Level" id="Level">Quel est votre niveau en développement : </label>
+        <div class="Skill">
+          <input type="radio" name="Level" value="Beginner" /><label for="Beginner">Débutant</label>
+          <input type="radio" name="Level" value="Junior" /><label for="Junior">Junior</label>
+          <input type="radio" name="Level" value="Expert" /><label for="Expert">Expert</label>
+        </div>
+      </div>
+      <div class="Knowledge">
+        <label for="Knowledge" id="Knowledge">Selectionnez le ou les langages avec lesquels vous êtes familier : </label>
+        <div class="Language">
+          <input type="checkbox" name="Ruby" id="ruby" /><label for="Ruby">Ruby</label>
+          <input type="checkbox" name="Python" id="Python" /><label for="Python">Python</label>
+          <input type="checkbox" name="PHP" id="PHP" /><label for="PHP">PHP</label>
+          <div class="column2">
+            <input type="checkbox" name="Java" id="Java" /><label for="Java">Java</label>
+            <input type="checkbox" name="NodeJS" id="NodeJS" /><label for="NodeJS">NodeJS</label>
+            <input type="checkbox" name="ReactJS" id="ReactJS" /><label for="ReactJS">ReactJS</label>
+          </div>
+          <div class="column3">
+            <input type="checkbox" name="C#" id="C#" /><label for="C#">C#</label>
+          </div>
+        </div>
+        <div class="OS">
+          <label for="OS" id="OS">Sur quel OS travaillez vous? : </label>
+          <select name="System">
+            <option value="System" selected disabled>Sélectionnez votre OS</option>
+            <optgroup label="Windows">
+              <option value="Windows10">Windows 10</option>
+              <option value="Windows9">Windows 9</option>
+              <option value="Windows8">Windows 8</option>
+            </optgroup>
+            <optgroup label="LINUX">
+              <option value="Ubuntu">Ubuntu</option>
+              <option value="Debian">Debian</option>
+            </optgroup>
+            <optgroup label="Autres">
+              <option value="MacOS">MacOS</option>
+              <option value="ChromeOS">ChromeOS</option>
+              <option value="Others">Autres</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="Complementary">
+      <legend id="Complementary">Informations complémentaires</legend>
+      <div class="Start">
+        <label for="Start">Début de la formation : </label><input type="month" name="Start" id="Start" placeholder="YYYY-MM" />
+      </div>
+      <div class="Git">
+        <label for="Git">Renseignez l'URL de votre Github : </label><input type="URL" name="Git" id="Git" placeholder="Votre git ici" />
+      </div>
+      <div class="Com">
+        <label for="Com">Avez vous des informations supplémentaires que vous souhaitez donner? : </label><textarea name="Com" rows="4" cols="50"></textarea>
+
+      </div>
+
+    </fieldset>
+    <input type="submit" value="Envoyer" id="submit" />
+  </form>
+</body>
+
+</html>

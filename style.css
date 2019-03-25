@@ -1,0 +1,111 @@
+.personnalInfos label{
+  float:left;
+  width:100%;
+}
+
+.personnalInfos input,.personnalInfos select{
+  display:block;
+  margin-bottom:10px;
+  position:relative;
+  left:15%;
+  bottom:23px;
+  width:30%;
+}
+
+.Adress input,.Adress label,.Contact input,.contact label{
+  display:inline-block;
+  float:none;
+}
+
+.Level label,.Knowledge label{
+  width:100%;
+  float:left;
+  margin-left:20px;
+}
+
+.Level input,.Knowledge input{
+  display:block;
+  margin-bottom:5px;
+  position:relative;
+  right:3px;
+  top:22px;
+}
+
+#Knowledge,#Capacity,#Civility,#Level{
+  margin-top:20px;
+}
+
+.Skill,.Language{
+  margin-left:100px;
+}
+
+.column2{
+  display:inline-block;
+  position:relative;
+  left:150px;
+  bottom:117px;
+}
+
+.column3{
+  display:inline-block;
+  position:relative;
+  left:194px;
+  bottom:155px;
+}
+.OS{
+  margin-top:-100px;
+  width:100%;
+}
+
+.OS label{
+  display:inline-block;
+  float:left;
+}
+
+.OS select{
+  display:block;
+  margin-bottom:10px;
+  position:relative;
+  left:21%;
+  bottom:23px;
+  width:30%;
+}
+
+.Complementary label{
+  float:left;
+  width:100%;
+}
+
+.Start,.Git{
+  margin-top:15px;
+  width:50%;
+}
+
+.Start input,.Git input{
+  margin-bottom:10px;
+  position:relative;
+  left:46%;
+  bottom:23px;
+  width:30%;
+}
+
+fieldset{
+  background-color:#FFA07A;
+
+}
+
+legend{
+  font-weight: bold;
+  font-style: italic;
+  font-family: URW Chancery L, cursive;
+  font-size: 2em;
+}
+
+#submit, legend{
+  display:block;
+  margin:auto;
+}
+
+form{
+  font-family: sans-serif;
+}
